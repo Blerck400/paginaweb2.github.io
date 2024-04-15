@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>portafolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <style>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+        }
+        </style>
+    <!-- Favicon -->
+    <link href="img/WhatsApp Image 2024-02-18 at 4.08.14 PM.jpeg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Portafolio</span>Digital</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+              <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Inicio</a>
+                <a href="#about" class="nav-item nav-link">Sobre Mí</a>
+                <a href="#qualification" class="nav-item nav-link">Cualidades</a>
+                <a href="#skill" class="nav-item nav-link">Habilidades</a>
+                <a href="#service" class="nav-item nav-link">Servicios</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#contact" class="nav-item nav-link">Contacto</a>
+                <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cambio de color
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id="color">Base</a>
+                    <a class="dropdown-item" id="bnw">Modo Oscuro</a>
+                    <a class="dropdown-item" id="pink">Rosa</a>
+                    <a class="dropdown-item" id="green">Verde</a>
+                  </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cambio de Idioma
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="idioma" class="idiom">
+                      <a class="dropdown-item"  data-language="es">Español</a>
+                      <a class="dropdown-item"  data-language="en">Ingles</a>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </nav>
+            <a href="#contact" class="btn btn-outline-primary d-none d-lg-block">Contacto</a>
+        </div>
+        
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/WhatsApp Image 2024-02-18 at 4.08.14 PM.jpeg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Yo Soy</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Nelly Contreras Abundis</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Programadora, Ingeniera en Sistemas Computacionales, Front End Developer, Apps Designer, Apps Developer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="" class="btn btn-outline-light mr-5">Descarga CV</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                        data-src="https://www.youtube.com/embed/92zOYcPCwHY?autoplay=1" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Iniciar Video</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Sobre</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Sobre Mi</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/WhatsApp Image 2024-02-18 at 8.21.47 PM.jpeg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4" data-section="profile" data-value="rol">Programadora</h3>
+                    <p data-section="profile" data-value="description">Profesional polifacética con experiencia en diseño web, programación, ingeniería en sistemas computacionales, desarrollo de aplicaciones móviles, SEO y creación de contenido. Capaz de combinar habilidades técnicas con una sólida comprensión de los principios de diseño y marketing digital para crear soluciones innovadoras que satisfagan las necesidades del cliente y mejoren la visibilidad en línea. Con un enfoque en la mejora continua y la adaptación a las últimas tendencias y tecnologías, estoy comprometida a proporcionar resultados excepcionales y satisfacer las expectativas del cliente.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Nombre: <span class="text-secondary">Nelly Contreras Abundis</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Cumpleaños: <span class="text-secondary">24 de Mayo del 2003</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Grado: <span class="text-secondary">ingenieria</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experiencia: <span class="text-secondary">0 años</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Telefono: <span class="text-secondary">+52 7225934413</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Correo: <span class="text-secondary">nelc242@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Direccion: <span class="text-secondary">Hermenegildio Galeana 711 Toluca México</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary"> Disponible</span></h6></div>
+                    </div>
+                    <a href="" class="btn btn-outline-primary mr-4">Contratame</a>
+                    <a href="" class="btn btn-outline-primary">Leer mas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Cualidades</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Educacion </h1>
+            </div>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mi Educacion</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2  ">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Primaria</h5>
+                            <p class="mb-2"><strong>Jose Maria De Yermo y Parres</strong> | <small>2014 - 2015</small></p>
+                            <p>Mi educacion primaria fue en la escuela catolica Jose Maria de Yermo y Parres en Toluca</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Secundaria</h5>
+                            <p class="mb-2"><strong>Escuela Secundaria Tecnica No:2 Tierra Y Libertad</strong> | <small>2016 - 2019</small></p>
+                            <p>Mi educacion media fue en una secundaria tecnica donde lleve el taller de computacion donde aprendi programacion y el uso de la paqueteria de oficce</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Preparatoria</h5>
+                            <p class="mb-2"><strong>Preparatoria Isima</strong> | <small>2019 - 2022</small></p>
+                            <p>Mi educacion media superior fue en la preparatoria isima donde aprendi html, programacion en c++, animate, photoshop </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Universidad</h5>
+                            <p class="mb-2"><strong>Isima</strong> | <small>2022 - 2025</small></p>
+                            <p>Mi educacion superior fue en la Universidad isima donde aprendi a programar en java, maquetacion wed, redes, elkectronica y soporte tecnico </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Habilidades</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mis Habilidades</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C++</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Servicios</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mis servicios</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Disenadora Web</h4>
+                    </div>
+                    <p>Diseñadora web con más de [X años] de experiencia en la creación de sitios web visualmente atractivos y funcionales. Apasionada por combinar diseño creativo con una sólida comprensión de las últimas tendencias tecnológicas. Capaz de transformar ideas en diseños digitales innovadores que cumplen con los objetivos del cliente y mejoran la experiencia del usuario. Habilidades destacadas en diseño visual, desarrollo front-end y colaboración interdisciplinaria.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Leer mas</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Programadora</h4>
+                    </div>
+                    <p>Programadora con más de [X años] de experiencia en el desarrollo de aplicaciones web y software de alta calidad. Apasionada por la resolución de problemas y el desarrollo de soluciones innovadoras que impulsen el progreso tecnológico. Amplia experiencia en el desarrollo front-end y back-end, así como en la colaboración efectiva en equipos interdisciplinarios. Comprometida con el aprendizaje continuo y la mejora constante de habilidades técnicas.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">leer mas</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Ingeniera en sistemas computacionales </h4>
+                    </div>
+                    <p>Ingeniero en Sistemas Digitales con una sólida formación en el diseño, desarrollo y implementación de sistemas digitales y embebidos. Apasionado por la tecnología y la innovación, con habilidades demostradas en el análisis de requisitos, diseño de arquitectura y programación de dispositivos digitales. Experiencia en la colaboración efectiva en equipos interdisciplinarios y en la gestión de proyectos tecnológicos. Comprometido con el aprendizaje continuo y la mejora constante de habilidades técnicas.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Leer mas</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Development</h4>
+                    </div>
+                    <p>Desarrollador de aplicaciones con más de [X] años de experiencia en el diseño, desarrollo y entrega de soluciones móviles de alta calidad para diversas plataformas. Experto en el desarrollo de aplicaciones nativas para iOS y Android, así como en el diseño de interfaces de usuario intuitivas y atractivas. Amplio conocimiento en lenguajes de programación como Swift, Kotlin y JavaScript, y en el uso de frameworks como React Native y Flutter. Capacidad probada para trabajar en equipo y gestionar proyectos desde la concepción hasta la implementación.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Leer mas</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">SEO</h4>
+                    </div>
+                    <p>Especialista en SEO con más de [X] años de experiencia en la optimización de sitios web para mejorar su visibilidad en los motores de búsqueda y aumentar el tráfico orgánico. Experto en el desarrollo e implementación de estrategias de SEO tanto en el ámbito técnico como de contenido, con un enfoque en la generación de resultados medibles y el cumplimiento de objetivos comerciales. Amplia experiencia en el análisis de datos, investigación de palabras clave, auditorías de sitios web y gestión de proyectos SEO.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Leer mas</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content Creating</h4>
+                    </div>
+                    <p>Creador de contenido con experiencia en la producción de material persuasivo y atractivo para diversas plataformas digitales. Especializado en estrategias de marketing de contenidos para aumentar la visibilidad de la marca, generar engagement y mejorar la conversión. Capaz de desarrollar contenido original y creativo que resuene con la audiencia objetivo y cumpla con los objetivos comerciales. Habilidad para trabajar en equipo y gestionar proyectos de principio a fin, desde la planificación y creación hasta la promoción y medición del rendimiento.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Leer mas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Galeria</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mi Portafolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">Todo</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Redes</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Electronica</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Paginas WEB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/WhatsApp Image 2024-02-18 at 7.55.51 PM.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/WhatsApp Image 2024-02-18 at 7.55.51 PM.jpeg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/pagina web.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/pagina web.png" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/cre.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/cre.png" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/g1.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/g1.jpeg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/g2.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/g2.jpeg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/g4.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/g4.jpeg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/g5.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/g5.jpeg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/g6.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/g6.jpeg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 40px;"></i>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contacto</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contactame</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form action="https://formspree.io/f/xjvnekaj" method="POST">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" name="entry.1234567890" placeholder="Tu nombre"
+                                        required="required" data-validation-required-message="Por favor introducir tu nombre" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" name="entry.0987654321" placeholder="Tu correo"
+                                        required="required" data-validation-required-message="Por favor introducir un correo" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" name="entry.5678901234" placeholder="Asunto"
+                                    required="required" data-validation-required-message="Por favor introducir el asunto" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" name="entry.2345678901" placeholder="Mensaje"
+                                    required="required"
+                                    data-validation-required-message="Por favor escribir el mensaje"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton" >Enviar
+                                    Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://x.com/NellyCo04381864?s=20"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/nelly.contreras.3720"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/nelly-contreras-abundis-584425294/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/nellycontreras9267/?igsh=MTM5em82cmwwZXc5dQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacidad</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terminos</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Ayuda</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
